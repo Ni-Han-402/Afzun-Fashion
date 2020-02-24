@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Raleway:400,600,700,800&display=swap');
+
+
+/*Font
+
+    font-family: 'Pacifico', ;
+    font-family: 'Raleway', ;
+
+*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.logo-header{
+    background-color: #FEF7F6 ;
+}
+.logo h1{
+    font-family: Pacifico;
+}
+.logo h1 span{
+    color: #FF5353 ;
+}
+
+
+
+
+
+
+
+
+#main{
+    height: 50px;
+    width: 50px;
+    background-color:#E2938C;
+    border-radius: 50%;
+    position: fixed;
+    left: 3%;
+    top:95%;
+    transform: translate(-50%,-50%);
+    z-index: 99;
+}
+#main:hover{
+    cursor: pointer;
+}
+#icon{
+    height: 8px;
+    width: 30px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#menu{
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    top:13%;
+    left: 58%;
+    transform: translate(-50%,-50%);
+}
+#menu ul{
+    height: 300px;
+    width: 150px;
+    text-align: center;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    opacity: 0;
+    visibility: hidden;
+}
+#menu ul li{
+    font-family: Raleway;
+    color:white;
+    font-size: 30px;
+    padding:10px;
+}
+#menu ul li:hover{
+    cursor: pointer;
+}
+#menu ul li:hover:before{
+    content: '';
+    height: 4px;
+    width: 15px;
+    background-color:white;
+    position: absolute;
+    margin-top:18px;
+    margin-left: -20px;
+}
+#menu ul li:hover:after{
+    content: '';
+    height: 4px;
+    width: 15px;
+    background-color:white;
+    position: absolute;
+    margin-top:18px;
+    margin-left: 5px;
+}
+#menu_circle_layer{
+    height: 0px;
+    width: 0px;
+    background-color:#E9B5AA;
+    border-radius: 50%;
+    position: fixed;
+    left: 1.5%;
+    top:94%;
+    transform: translate(-50%,-50%);
+    z-index: 9;
+}
+#social_media{
+    height: 0px;
+    width: 0px;
+    background-color:#E2938C;
+    border-radius: 50%;
+    position: fixed;
+    left: 100%;
+    top:0%;
+    transform: translate(-50%,-50%);
+    z-index: 99;
+}
+#msg{
+    font-family: Raleway;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top:63%;
+    left: 28%;
+    transform: translate(-50%,-50%);
+}
+#social_media ul{
+    width: 160px;
+    height: 100px;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top:80%;
+    left: 28%;
+    transform: translate(-50%,-50%);
+}
+#social_media ul li{
+    float: left;
+    margin: 4px;
+}
+#container{
+    opacity: 0;
+    visibility: hidden;
+}
+#social_circle_layer{
+    height: 0px;
+    width: 0px;
+    background-color:#E9B5AA;
+    border-radius: 50%;
+    position: fixed;
+    left: 101%;
+    top:1%;
+    transform: translate(-50%,-50%); 
+    z-index: 9;
+}
+
+
+
+
+.menu-bar{
+    background-color: #E9B5AA;
+}
+.nav-link{
+    color: #fff;
+    font-size: 25px;
+}
+.nav-link:hover{
+    color: #000000;
+}
+
+.banner{
+    background-color: #FEF7F6 ;
+    position: relative;
+}
+.banner-img{
+    width: 60%;
+}
+.banner-img img{
+    width:100%;
+    height: 420px;
+    border-radius: 0 0 150px 10px;
+    margin-bottom: -80px;
+}
+.banner-title{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-5%);
+}
+.banner-title h1{
+    font-size: 55px;
+    font-family: Pacifico;
+  
+
+}
+.banner-title h1 span{
+    color: #FF5353 ;
+}
+.banner-title h2{
+    font-size: 40px;
+    font-family: Pacifico;
+ 
+
+}
+
+
+
+.about{
+    margin-top: 150px;
+    margin-bottom: 80px;
+}
+.about-content h1{
+    font-size: 40px;
+    font-family: Raleway;
+}
+.about-content p{
+    font-size: 16px;
+    font-family: Raleway;
+
+}
+
+.img-box{
+    position: relative;
+}
+.img-box:before{
+    position: absolute;
+    content: "";
+    top: -10%;
+    left: -10%;
+    border: 10px solid #FF5353;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all .4s ease;
+}
+.img-box:hover::before{
+    opacity: 1;
+    transform: translate(-5%, -5%);
+
+}
+.img-box img{
+    width: 100%;
+}
+
+
+
+
+.new-arrival, .just-for-you{
+    background-color: #fef7f6;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.new-arrival h2{
+    background-color: #E2938C;
+    color: #fff;
+    width: 200px;
+    height: 40px;
+    padding: 5px;
+    font-size: 25px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.just-for-you h2{
+    background-color: #E2938C;
+    color: #fff;
+    width: 200px;
+    height: 40px;
+    padding: 5px;
+    font-size: 25px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.new-arrival h2::after{
+    content: "";
+    position: relative;
+    border-top: 40px solid #E2938C;
+    border-right: 40px solid transparent;
+    left: 53px;
+    top: 37px;
+}
+.just-for-you h2::after{
+    content: "";
+    position: relative;
+    border-top: 40px solid #E2938C;
+    border-right: 40px solid transparent;
+    left: 59px;
+    top: 37px;
+}
+.product-item{
+    margin-top: 20px;
+}
+.product-img{
+    width: 100%;
+}
+.img img{
+    width: 100%;
+    height: 300px;
+}
+.img{
+    position: relative;
+}
+.img::after{
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: all .4s ease;
+   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff5353+0,000000+100&0.65+0,0+100 */
+background: -moz-linear-gradient(top,  rgba(255,83,83,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(255,83,83,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(255,83,83,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6ff5353', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+
+}
+.product-img:hover .img::after{
+    opacity: 1;
+    top: 0;
+}
+.product-icon{
+    position: absolute;
+    left: 20%;
+    bottom: 40%;
+    transform: translate(-20%);
+    transition: all .4s ease;
+    opacity: 0;
+}
+.product-img:hover .product-icon{
+    opacity: 1;
+    transform: translate(-50);
+    left: 40%;
+}
+.btn-custom{
+    background-color: #FF5353;
+    color: #fff;
+}
+.product-star .fa{
+    color: #FF5353;
+    margin-top: 20px;
+}
+.product-star .fas{
+    color: #FF5353;
+}
+.product-star .far{
+    color: #FF5353;
+}
+.product-star h3{
+    font-size: 30px;
+    font-family: Raleway;
+}
+.product-star h5{
+    font-size: 25px;
+    font-family: Raleway;
+}
+
+.btn-load{
+    background-color: #FF5353;
+    color: #fff;
+    border-radius: 15px;
+}
+
+
+
+
+
+.women{
+    background-color: #E2938C;
+    
+    height: 450px;
+}
+.bg-img{
+    background-image: url(../images/women-fashion.png);
+    background-repeat: no-repeat;
+}
+.women-content{
+    padding-top: 150px;
+}
+.women-content h1{
+    font-family: Pacifico;
+    font-weight: 200;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    
+}
+.women-content h3{
+    font-family: Raleway;
+    font-weight: 200;
+}
+.women-content h4{
+    font-family: Raleway;
+    font-weight: 200;
+}
+.women-content h4 span{
+    color: #fff;
+    font-size: 50px;
+}
+.women-content p{
+    font-family: Raleway;
+    font-weight: 150;
+}
+.btn-women-button{
+    background-color: #FF5353;
+    color: #fff;
+}
